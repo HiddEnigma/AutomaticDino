@@ -10,7 +10,6 @@ def press_key(key):
 
 
 def has_collided(data):
-
     for x in range(670, 710):
         for y in range(330, 498):
             if data[x, y] < 171:
@@ -34,7 +33,6 @@ def has_collided(data):
 
 if __name__ == "__main__":
     time.sleep(4)
-
 
     while True:
         screen = ImageGrab.grab().convert("L")
