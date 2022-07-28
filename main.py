@@ -34,25 +34,22 @@ def has_collided(data):
 
 if __name__ == "__main__":
     time.sleep(4)
-    #
-    # press_key("up")
-    # press_key("up")
-    #
-    # time.sleep(1)
+
 
     while True:
         screen = ImageGrab.grab().convert("L")
         data = screen.load()
 
-        #has_collided(data)
+        has_collided(data)
+
+        # Tests for collision positioning
+        # for x in range(660, 700):
+        #     for y in range(330, 480):
+        #         data[x, y] = 171
         #
-        for x in range(660, 700):
-            for y in range(330, 480):
-                data[x, y] = 171
-
-        for x in range(702, 790):
-            for y in range(507, 547):
-                data[x, y] = 100
-
-        screen.show()
-        break
+        # for x in range(702, 790):
+        #     for y in range(507, 547):
+        #         data[x, y] = 100
+        #
+        # screen.show()
+        # break
